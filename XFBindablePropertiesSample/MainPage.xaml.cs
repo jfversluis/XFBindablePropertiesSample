@@ -10,9 +10,13 @@ namespace XFBindablePropertiesSample
 {
     public partial class MainPage : ContentPage
     {
+        public string MyDescription { get; set; } = "Did you subscribe yet?";
+
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = this;
         }
     }
 }
